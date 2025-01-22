@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.myCusCarousel {
+    margin-top: 90px !important;
+}
+
+.myCusKfc {
+    margin-top: 90px !important;
+}
+
+.mycuskababjees {
+    margin-top: 85px !important;
+}
+
+.mycusginsoy {
+    margin-top: 90px !important;
+}
+
+.myCusCharacter {
+    margin-top: 100px !important;
+}
+
+.myMainIndex {
+    margin-top: 90px !important;
+}
+
+.mycusheading {
+    color: purple;
+    font-size: 20px;
+}
+
+.myHeader {
+    position: fixed;
+    top: 0;
+    z-index: 9999999999999999;
+}
+
+.nav-link {
+    color: #fff;
+}
+
+.nav-link:hover {
+    color: rgb(252, 49, 252);
+}
+
+.dropdown-item:hover {
+    background-color: rgb(181, 98, 181);
+    color: #fff;
+}
+
+.mybtn {
+    color: white;
+    background-color: purple;
+    font-size: 15px;
+    border-radius: 20px;
+}
+
+.mybtn1 {
+    color: white;
+    background-color: purple;
+    font-size: 15px;
+    border-radius: 20px;
+}
+
+.mybtn:hover {
+    border: 1px solid purple;
+    font-size: 15px;
+    font-weight: bold;
+    font-weight: bold;
+    background: transparent;
+    color: purple;
+}
+
+.mycusanchor {
+    color: black;
+}
+
+.mymainheading {
+    color: purple;
+    font-size: 30px;
+}
+
+.myspan {
+    display: block;
+}
+
+.myimg {
+    border-radius: 20px;
+    height: 350px;
+}
+
+.myDiv {
+    height: 350px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.myround {
+    border-radius: 8px;
+}
+
+
+
+/*  */
+
+header {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('../img/bgtheme.jpg');
+    padding: 0px 30px;
+    font-family: fantasy;
+    font-style: bold;
+    color: white;
+    font-size: larger;
+}
+
+header ul {
+    display: flex;
+    gap: 50px;
+
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header ul li a:hover {
+    color: rgb(252, 49, 252);
+}
+
+.icon {
+    font-size: 40px;
+    position: absolute;
+    transform: rotate(90deg);
+    right: 20px;
+    top: 0px;
+    display: none;
+}
+
+
+nav {
+    width: 300px;
+    height: 120vh;
+    background-color: rgb(147, 11, 147);
+    text-align: center;
+    display: none;
+    position: absolute;
+    left: -300px;
+    transition-duration: 1.5s;
+    /* font-family: fantasy; */
+    /* font-style: italic; */
+    color: white;
+    z-index: 2;
+}
+
+nav ul li {
+    margin-top: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+
+}
+
+nav ul li a:hover {
+    color: rgb(252, 49, 252);
+}
+
+
+@media screen and (max-width: 768px) {
+    header {
+        display: none;
+    }
+
+    .icon {
+        display: block;
+    }
+
+    nav {
+        display: block;
+    }
+
+    .myMainIndex {
+        margin-top: 0 !important;
+    }
+
+    .myCusCarousel {
+        margin-top: 0px !important;
+    }
+
+    .myCusCharacter {
+        margin-top: -28px !important;
+    }
+
+
+
+
+}
+
+.show {
+    left: 0;
+}
+
+#mymainlogo {
+    display: none;
+}
+
+@media (max-width: 786px) {
+    #mymainlogo {
+        display: block;
+    }
+
+    #carouselExample {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .carousel-inner img {
+        height: 300px;
+        /* object-fit: cover; */
+        border-radius: 1rem;
+    }
+
+    .backgroundimg {
+        height: 180vh;
+        margin-top: 0px !important;
+        
+    }
+
+    .myCusKfc {
+        margin-top: 0px !important;
+    }
+
+    .mycusginsoy {
+        margin-top: 0px !important;
+    }
+
+    .mycuskababjees {
+        margin-top: 0px !important;
+    }
+    .myimg{
+        height: 200px;
+    }
+
+}
+
+@media (max-width: 530px) {
+
+    .carousel-inner img {
+        height: 180px;
+        /* object-fit: cover; */
+        border-radius: 1rem;
+    }
+}
+
+/* contact */
+
+.backgroundimg {
+    /* border: 1px solid red; */
+    background-image: linear-gradient(rgba(175, 120, 179, 0.8), rgba(170, 100, 172, 0.8)), url('../img/background1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 100vh; */
+    margin-top: 90px;
+}
+
+.myhead {
+    /* border: 1px solid blue; */
+    padding-top: 50px !important;
+}
+
+.mybuttn {
+    border-radius: 30px;
+    color: white !important;
+    background-color: rgb(197, 4, 197);
+    font-weight: bold;
+}
+
+.mybuttn:hover {
+    border-radius: 30px;
+    color: black !important;
+    background-color: white;
+}

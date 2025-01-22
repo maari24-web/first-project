@@ -1,0 +1,81 @@
+
+.myCusPark{
+    margin-top: 90px !important;
+}
+.myCustInfo{
+    margin-top: 90px !important;
+}
+ .title{
+    font-size: 3.5rem;
+    color: purple;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.product-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+}
+ .product-container .product{
+    text-align: center;
+    padding: 3rem 2rem;
+    background: #fff;
+    box-shadow: 0.5rem 1rem rgba(0, 0, 0, .1);
+    outline: .1rem solid #ccc;
+    outline-offset: -1.5rem;
+    cursor: pointer;
+}
+.product-container .product:hover{
+    outline: .2rem solid #222;
+    outline-offset: 0;
+}
+.product-container .product img{
+    height: 25rem;
+}
+.product-container .product:hover img{
+    transform: scale(.9);
+}
+.product-container .product h3{
+    padding: .5rem 0;
+    font-size: 2rem;
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.product-container .product:hover h3{
+    color: purple;
+    
+}
+.product-container .product .head{
+    font-size: 2rem;
+    color: #444;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.product-container .product:hover .head{
+    color: #222;
+}
+
+@media screen and (max-width: 768px){
+    .myCusPark {
+        margin-top: -15px !important;
+    }
+
+    .myCustInfo {
+        margin-top: 0px !important;
+    }
+}
+
+
+/* .btn{
+    color: white;
+    width: 100px;
+    height: 50px;
+    background-color: purple;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    text-decoration: none;
+    outline: #444;
+    border-radius: 230px;
+} */
