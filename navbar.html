@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-decoration: none;
+        box-sizing: border-box;
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+
+    header {
+        width: 100%;
+        height: 90px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-image: url('assets/img/bgtheme.jpg');
+        padding: 0px 30px;
+        font-family: fantasy;
+        font-style: italic;
+        color: white;
+
+    }
+
+    header ul {
+        display: flex;
+        gap: 50px;
+
+    }
+
+    header ul li a{
+        color: white;
+
+    }
+
+    .icon {
+        font-size: 40px;
+        position: absolute;
+        transform: rotate(90deg);
+        right: 20px;
+        top: 20px;
+        display: none;
+    }
+
+
+    nav {
+        width: 200px;
+        height: 100vh;
+        background-color: rgb(147, 11, 147);
+        text-align: center;
+        display: none;
+        position: absolute;
+        left: -200px;
+        transition-duration: 1.5s;
+        /* font-family: fantasy; */
+        /* font-style: italic; */
+        color: white;
+    }
+
+
+    nav ul li {
+        margin-top: 30px;
+    }
+    nav ul li a{
+        color: white;
+
+    }
+
+
+    @media screen and (max-width: 768px) {
+        header {
+            display: none;
+        }
+
+        .icon {
+            display: block;
+        }
+
+        nav {
+            display: block;
+        }
+
+    }
+
+    .show {
+        left: 0;
+    }
+
+   
+</style>
+
+<body>
+    <div class="icon" onclick="clickme()">|||</div>
+    <header>
+        <h1 class="myh1">
+            <img src="assets/img/whitelogo.png" alt="">
+        </h1>
+        <ul>
+            <li><a href="">Experience</a></li>
+            <li><a href="">Leisure and Dining</a></li>
+            <li><a href="">Park Characters</a></li>
+            <li><a href="">Whats up</a></li>
+            <li><a href="">Park Information</a></li>
+            <li><a href="">Business Opportunities</a></li>
+        </ul>
+    </header>
+
+
+    <nav id=".nav1">
+        <h1>
+            <img src="assets/img/whitelogo.png" alt="">
+
+        </h1>
+        <ul>
+            <li><a href="">Experience</a></li>
+            <li><a href="">Leisue and Dining</a></li>
+            <li><a href="">Park Characters</a></li>
+            <li><a href="">Whats up</a></li>
+            <li><a href="">Business Opportunities</a></li>
+            <li><a href="">Park Information</a></li>
+        </ul>
+    </nav>
+    <script>
+        function clickme() {
+
+            document.getElementById(".nav1").classList.toggle("show");
+        }
+    </script>
+</body>
+
+</html>
